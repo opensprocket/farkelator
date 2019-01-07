@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>
+            Farkleator: The Farkle Calculator
+        </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="/farkleator.js" type="js"></script>
+        <!--meta name="viewport" content="width=device-width, inital-scale=1.0">-->
+    </head>
+    <body>
+        
+<!--Body Div-->
+    <div id="main">
+
+<!-- Introduction -->
+        <div id="intro">
+            <h1>Farkleator</h1>
+            <p>Welcome to the Farkleator: The Farkle Calculator! This utility keeps track of the players and their scores. To begin the game, please input all the players and start the game.</p>
+        </div>
+<hr width="90%">
+
+<!-- Player Creation -->
+        <div id="player-creation">
+            <h3>Player Creation</h3>
+                <form>
+                    Player Name:
+                    <input type="text" name="Player Name" id="playername">
+                    <input type="submit" value="Add Player" id="submitPlayer" onclick="addPlayer(playername)">
+                </form>
+                <h3>Player List</h3>
+            <div id="player-list"></div>
+            <button type="button" onclick="startGame()">Start the Game!</button>
+        </div>
+
+<!-- Scoreboard-->
+        <div id="scoreboard-container">       
+            <h3>Scoreboard</h3>
+            <div id="scoreboard"></div>
+        </div>
+<!-- Score Input-->        
+        <div id="score-input-container">
+                <h3>Score Input</h3>
+                <div id="turn-number"></div>
+                <form id="score">
+                    Score: <input type="number" id="score"> <br>
+                    Player: <br> 
+                    <select id="player-list" name="player-list" size="5" width="100px">
+                        <option value="josh">Josh</option>
+                        <option value="mom">Mom</option>
+                        <option value="dad">Dad</option>
+                    </select>
+                    <br>
+                    <input type="submit" id="submit-score" value="Input Score">
+                </form>
+            </div>
+
+<!-- Scoring Reference -->
+<div id="scoring-reference">
+    <h3>Scoring Reference</h3>
+    <table id="score-reference">
+        <tr>
+            <th>Die Combination</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Five</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>One</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>3 One's</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>3 Two's</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>3 Three's</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>3 Four's</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>3 Fives</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>3 Sixes</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>4 of a Kind</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>5 of a Kind</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>6 of a Kind</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Straight 1-6</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Three Pairs</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Two Triplets</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>4 of a Kind + Pair</td>
+            <td>1500</td>
+        </tr>
+    </table>
+</div>
+<!-- Rules -->
+        <div id="rules">
+            <h3>Rules of the Game</h3>
+            <p>The game begins by all players rolling one die. The person with the highest number starts; in the case of ties, dice are re-rolled. Play then continues counter-clockwise. In order to enter the game, you must roll at least 500 points to enter. </p>
+            <p>Each turn players can roll the dice. The player can choose to keep any combination of scoring dice. If a player does not score on a roll, their turn ends and they do not score their points (no exceptions). If a player gets a full combo (meaning all 6 dice have scored), they may roll all six dice again, until they choose to stop or a they do not score on a roll.</p>
+            <p>Play continues until the someone reaches to 10,000 triggers the final round. The person with the most points at the end of the round wins! </p>
+        </div>
+<!--End of App Content-->    
+    </div>
+
+<!-- Footer -->
+    <div>
+
+    </div>
+    </body>
+</html>

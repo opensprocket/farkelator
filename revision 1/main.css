@@ -1,0 +1,42 @@
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid white;
+    color: white;
+    padding: 4px;
+}
+
+input[type=text] {
+    border: 3px solid white;
+    background: lightslategrey;
+}
+
+input[type=number]{
+    border: 3px solid white;
+    background: lightslategrey;
+}
+
+input[type=text]:focus {
+    border: 3px solid lightgrey;
+    background: lightslategrey;
+}
+
+input[type=number]:focus {
+    border: 3px solid lightgrey;
+    background: lightslategrey;
+}
