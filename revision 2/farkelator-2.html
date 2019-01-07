@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf8">
+    <title>Farkelator</title>
+    <script type="text/javascript" src="./farkelator2.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Farkelator</h1>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="#player-creation">Player Creation</a></li>
+                <li><a href="#score-input">Scpre Input</a></li>
+                <li><a href="#score-reference">Scoring Reference</a></li>
+            </ul>
+        </div>
+        
+        <div id="main-content">
+        
+            <!--player creation-->
+            <div id="player-creation">
+                <h3>Player Creation</h3>            
+                <form>
+                    <input type="text" name="Player Name" id="playername">
+                    <button onclick="createNewPlayer()">Add Player</button>
+                </form>
+                <h3>Current Players:</h3>
+                <div id="player-list"></div>
+            </div>
+            <!--scoreboard-->
+            <div id="scoreboard"></div>
+
+            <!--input score-->
+            <div id="score-input"></div>
+
+            <!--score reference-->
+            <div id="score-reference-container">
+                    <h3>Scoring Reference</h3>
+                    <table id="score-reference">
+                        <tr>
+                            <th>Die Combination</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr>
+                            <td>Five</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>One</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>3 One's</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>3 Two's</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>3 Three's</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>3 Four's</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>3 Fives</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>3 Sixes</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>4 of a Kind</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>5 of a Kind</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>6 of a Kind</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>Straight 1-6</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>Three Pairs</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>Two Triplets</td>
+                            <td>2500</td>
+                        </tr>
+                        <tr>
+                            <td>4 of a Kind + Pair</td>
+                            <td>1500</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Created by Josh Breiter &copy; 2019</p>
+        </div>
+    </div>
+</body>
+</html>

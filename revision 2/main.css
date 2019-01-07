@@ -1,0 +1,11 @@
+table {
+    border: 3px black;
+}
+
+html {
+    background: lightslategray;
+}
+
+a {
+    text-decoration: none;
+}
