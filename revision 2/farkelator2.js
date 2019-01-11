@@ -1,6 +1,6 @@
 /* 
 ===================================
- Farkleator: The Farkle Calculator
+ Farkelator: The Farkel Calculator
 ===================================
 Version: 1.0
 Last updated: 6 Dec 2019
@@ -22,3 +22,6 @@ function createNewPlayer() {
     console.log("Player name: " + input);
     addPlayer(input);    
 }
+
+// scoreboard
+
